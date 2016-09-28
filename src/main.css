@@ -1,0 +1,115 @@
+* {
+	margin: 0;
+}
+.container-fluid {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #8c8c8c;
+	font-size: 15px;
+	text-align: center;
+}
+.row {
+	margin-bottom: 70px;
+}
+.header {
+	width: 100%;
+	overflow: hidden;
+	top: 100px;
+	height: 50px;
+	text-align: left;
+	background: #f2f2f2;
+}
+.footer {
+	padding-top: 10px;
+	width: 100%;
+	background: #F8F8F8;
+	overflow: hidden;
+	position: absolute;
+	top: 94%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-top: #1a1a1a;
+	display: flex;
+	align-items: center;
+}
+.col-md-1 {
+	text-align: left;
+}
+#About { text-align: left; }
+#terms { text-align: center; }
+#privacy { text-align: right; }
+#settings { text-align: left; }
+.referencelink {
+	color: #8c8c8c;
+}
+.referencelink:hover {
+	color: #8c8c8c;
+}
+.googleLogo {
+	margin-top: 170px;
+}
+.btn{
+	border: none;
+	background-color: #f2f2f2;
+	text-align: center;
+	display: inline-block;
+	font-size: 14px;
+	color: #8c8c8c;
+	position: relative;
+	margin-bottom: 20px;
+	font-weight: bold;
+	height: 40px;
+	width: 150px;
+	overflow: auto;
+}
+.button:hover {
+		color: #1a1a1a;
+}
+#inputBar:focus {
+	outline: none;
+}
+#inputBar {
+	color: #1a1a1a;
+	border: none;
+	margin-left: 0px;
+	width: 550px;
+	height: 40px;
+	text-align: left;
+}
+.searchBarOutline {
+	border-style: solid;
+	border-width: 1.25px;
+	border-color: #D3D3D3;
+	height: 45px;
+	width: 650px;
+	margin:20px auto;
+	margin-top: 25px;
+}
+.searchBarOutline:hover {
+	border-color: #8c8c8c;
+}
+.microphone {
+	float: right;
+	margin: 2px;
+}
+#GoogleSearch {
+	position: absolute;
+	right: 5px;
+}
+#GoogleSearch:hover {
+	border-style: solid;
+	border-width: 1.25px;
+	border-color: #D3D3D3;
+}
+#lucky {
+	position: absolute;
+	left: 5px;
+}
+#lucky:hover {
+	border-style: solid;
+	border-width: 1.25px;
+	border-color: #D3D3D3;
+}
+.live {
+	color: red;
+}

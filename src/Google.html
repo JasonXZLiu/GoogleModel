@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Google</title>
+		<script
+			  src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script>
+		<link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1024px-Google_%22G%22_Logo.svg.png">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript">
+			// Document.Ready (basically only runs after the website is set up)
+    		$(function() {
+    			// Brings the user to the new webpage when click the button
+    			$('#lucky').click(function() {
+  					window.location='https://www.google.com/doodles';
+				});
+				$('#GoogleSearch').click(function() {
+					GotoSearch();
+				});
+				$('#inputBar').keypress(function(e) {
+    				if(e.which == 13) {
+  						GotoSearch();
+    				}
+				});
+				 function GotoSearch() {
+					var userInput = $('#inputBar').val();
+					var userLength = userInput.length;
+					if(userLength > 0) {
+						$('body').html(userInput.length);
+    					var weblocation = "https://www.google.ca/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiP-qKCibHPAhWFJR4KHcGsC5EQPQgD#hl=en&q=" + userInput;
+    					window.location=weblocation;
+					} else {
+						alert("Nothing was entered.");
+						location.reload();
+					};
+				} ;
+   			});
+		</script>
+	</head>
+	<body>
+		<div class="container-fluid">
+		<!--
+			<div class="header">
+				<div class="col-md-4">
+					<p class="wordinHeader">Gmail</p>
+				</div>
+				<div class="col-md-4">
+					<p class="wordinHeader"> Header </p>
+				</div>
+				<div class="col-md-4"></div>				
+			</div>
+		-->
+			<div class="googleLogo">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/2000px-Google_2015_logo.svg.png" height="110" width="320">
+			<div>
+			<div class="searchBarOutline">
+					<input id="inputBar" placeholder="Search Google"></input>
+				<img class="microphone" src="http://www.thesempost.com/wp-content/uploads/2015/09/google-mic-icon.png" height="40" width="45">
+			</div>
+			<div class="button">
+				<div class="row">
+  					<div class="col-md-6">
+  						<button type="button" class="btn btn-default" id="GoogleSearch">Google Search</button>
+  					</div>
+  					<div class="col-md-6">
+  						<button type="button" class="btn btn-default" id="lucky">I'm Feeling Lucky</button>
+  					</div>
+  				</div>
+			</div>
+			<div class="liveStatus">
+				<p><font class="live">Live!</font> Watch the <a href="https://www.globalcitizen.org/en/">Global Citizen Festival</a> and join the movement to support women and girls</p>
+				<br>
+				<p>Google.ca offered in: <a href="https://www.google.fr/">Francais</a></p>
+			</div>
+			<footer class="footer">	
+				<div class="col-md-3">
+					<div class="col-md-4"><a class="referencelink" href="https://www.google.ca/intl/en/ads/?fg=1">Advertising</a></div>
+  					<div class="col-md-4"><a class="referencelink" href="https://www.google.ca/services/?fg=1#?modal_active=none">Business</a></div>
+  					<div class="col-md-4" id="About"><a class="referencelink" href="https://www.google.ca/intl/en/about/">About</a></div>
+				</div> 
+				<div class="col-md-6"></div>	
+				<div class="col-md-3">
+					<div class="col-md-4" id="privacy"><a class="referencelink" href="https://www.google.ca/intl/en/policies/privacy/?fg=1">Privacy</a></div>
+  					<div class="col-md-4" id="terms"><a class="referencelink" href="https://www.google.ca/intl/en/policies/terms/regional.html">Terms</a></div>
+  					<div class="col-md-4" id="settings"><a class="referencelink" href="https://www.google.ca/preferences?hl=en-CA&fg=1">Settings</a></div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
