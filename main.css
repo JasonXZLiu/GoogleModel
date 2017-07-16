@@ -8,13 +8,13 @@
 	text-align: center;
 }
 .row {
-	margin-bottom: 70px;
+	margin-bottom: 7%;
 }
 .header {
 	width: 100%;
 	overflow: hidden;
-	top: 100px;
-	height: 50px;
+	top: 10%;
+	height: 10%;
 	text-align: left;
 	background: #f2f2f2;
 }
@@ -83,6 +83,7 @@
 	height: 45px;
 	width: 650px;
 	margin:20px auto;
+	padding: 2px;
 	margin-top: 25px;
 }
 .searchBarOutline:hover {
@@ -90,7 +91,7 @@
 }
 .microphone {
 	float: right;
-	margin: 2px;
+	margin: 0px;
 }
 #GoogleSearch {
 	position: absolute;
